@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    title = {'title':'home'}
+    title = {'title':'Página inicial'}
     return render(
         request,
         'home/index.html',
