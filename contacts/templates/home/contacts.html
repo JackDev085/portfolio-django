@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static "contacts/styles.css" %}">
+  <link rel="stylesheet" href="{% static "contacts/style.css" %}">
   <link rel="apple-touch-icon" sizes="180x180" href="{% static "imgs/apple-touch-icon.png" %}">
   <link rel="icon" type="image/png" sizes="16x16" href="{% static "imgs/favicon-16x16.png" %}">
   <link rel="icon" type="image/png" sizes="32x32" href="{% static "imgs/favicon-32x32.png" %}">
@@ -24,10 +24,42 @@
     </div>
   </div>
   <div class="main">
-    <h1> 
-      Aqui terá contatos
-    </h1>
+
+    <a href="https://www.linkedin.com/in/jackson-nascimento-bb4454205/" alt="linkedin">
+      <div class="card">
+        <img src="{% static "imgs/link.png" %}" alt="foto-linkedin">
+        <h2>
+          Linkedin
+        </h2>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/imdevjack/" alt="icone-instagram">
+      <div class="card">
+        <img src="{% static "imgs/instagram.png" %}" alt="instagram">
+        <h2>
+            Email
+        </h2>
+      </div>
+    </a>
+
+  <a href="https://github.com/JackDev085">
+    <div class="card">
+      <img src="{% static "imgs/github.png" %}" alt="">
+      <h2>
+       Github
+      </h2>
+    </div>
+  </a>
   </div>
+  
+  <footer>
+    <p>
+      <a target="_blank" href="https://encurtador-simples.vercel.app/"
+        >Feito com <span class="heart">❤</span> por Jack</a>
+    </p>
+  </footer>
+
   
 </body>
 </html>

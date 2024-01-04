@@ -75,6 +75,9 @@ a{
   align-items: center;
   justify-content: center;
 }
+.projeto-blog h3{
+  font-size: 26px;
+}
 .projeto-blog{
   display: flex;
   flex-direction: column;
@@ -85,6 +88,20 @@ a{
   height: 300px;
   margin: 20px;
   border: 1px solid white;
+}
+.projeto-blog img{
+  position: absolute;
+  width:30em;
+  height: 16em;
+  z-index: -1;
+}
+@media (max-width:590px){
+  .projeto-blog img{
+    position: absolute;
+    width:18em;
+    height:16em;
+    z-index: -1;
+  }
 }
 .projeto{
   display: flex;
@@ -105,4 +122,5 @@ a{
 footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }

@@ -28,7 +28,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
-# Application definition
+# Application definition s
 
 INSTALLED_APPS = [
     'django.contrib.admin',
