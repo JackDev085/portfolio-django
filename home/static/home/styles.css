@@ -3,10 +3,17 @@
   pad: 0;
   box-sizing: border-box;
 
-  color: beige;
+  color: white;
+}
+body{
+  background: linear-gradient(#020203, #17171A, #0C0C0E);
 }
 a{
   text-decoration: none;
+  color: #9b9ba3;
+  transition: all 200ms;
+}
+a:hover{
   color: white;
 }
 .main{
@@ -16,7 +23,6 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black;
   color: white;
 }
 .top{
@@ -56,9 +62,11 @@ a{
   display:flex;
   flex-direction: row;
   justify-content: center;
+
 }
 .bottom h2{
   font-size: 30px;
+  color: #9b9ba3;;
 }
 @media (max-width:800px) {
   .bottom h2{

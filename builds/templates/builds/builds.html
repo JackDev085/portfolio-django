@@ -12,7 +12,7 @@
     <title>Projetos</title>
   </head>
   <body>
-    
+    <!-- Criando nosso cabealho -->
     <div class="header">
       <div class="clique">
         <div class="voltar">
@@ -24,6 +24,7 @@
         </div>
       </div>
     </div>
+    <!-- Fim do cabeçalho -->
     <div class="text-project">
       <h2>Projetos</h2>
       <p>alguns projetos que desenvolvi</p>
@@ -31,126 +32,55 @@
 
     <div class="hr"></div>
 
-    <div class="projetos">
-      <div class="projetos-top">
+    <!-- Começo dos projetos -->
+    {% comment %} Início Projeto blog {% endcomment %}
+      <a href="https://blogdojack.vercel.app/" target="_blank">
+        <div class="projetos">
+          <div class="projeto">
+            <h3>Blog (DJANGO , PYTHON , HTML , CSS)</h3>
+            <img src="{% static "imgs/blog.jpg" %}" alt="img-blog">
+          </div>
+      </a>
+    {% comment %} Fim projeto blog {% endcomment %}
 
-        <div class="projeto-blog">
-          <img src="{% static "imgs/blog.jpg" %}" alt="img-blog">
-          <h3>
-            <a href="https://jackson-lorran.vercel.app">Top-projeto🔗</a>
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet.
-          </p>
-          <a href="https://github.com/JackDev085">Saiba-mais</a>
+      {% comment %} Começo landing page {% endcomment %}
+      <a href="https://landing-jack.netlify.app/" target="_blank">
+        <div class="projeto">
+          <h3>Landing-Page (HTML , CSS , JS)</h3>
+          <img src="{% static "imgs/land.jpg" %}" alt="">
         </div>
+      </a>
+      {% comment %} Fim projeto landing page {% endcomment %}
 
-        <div class="duo-projetos">
+      {% comment %} Começo projeto encurtador {% endcomment %}
+      <a target="_blank" href="https://encurtador-simples.vercel.app/" >
           <div class="projeto">
-            <h3>
-              <a href="#">Projeto-médio🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
+            <h3>Encurtador (HTML , CSS)</h3>
+            <img src="{% static "imgs/encurtador.jpg" %}" alt="">
+        </div>
+      </a>
+      {% comment %} Fim projeto encurtador {% endcomment %}
 
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-        </div> 
+      {% comment %} Começo projeto cópia Netflix {% endcomment %}
+      <a href="https://netflixcop.vercel.app/" target="_blank">
+        <div class="projeto">
+          <h3>Clone Netflix</h3>
+          <img src="{% static "imgs/netflix.jpg" %}" alt="">
+        </div>
+      </a>
+      {% comment %} Fim projeto cópia Netflix {% endcomment %}
 
-          <div class="hr"></div>
+      {% comment %} Começo projeto cópia Netflix {% endcomment %}
+      <a href="https://pinguim-css.vercel.app/" target="_blank">
+        <div class="projeto">
+          <h3>Pinguim (HTML, CSS)</h3>
+          <img src="{% static "imgs/pinguim.jpg" %}" alt="">
+        </div>
+      </a>
+      {% comment %} Fim projeto cópia Netflix {% endcomment %}
 
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-          <div class="projeto">
-            <h3>
-              <a href="#">Projeto🔗</a>
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet.
-            </p>
-            <a href="#">Saiba mais</a>
-          </div>
-
-
-      </div>
+      <div class="hr"></div>
+      
     </div>
     <footer>
       <p>
@@ -158,5 +88,7 @@
           >Feito com <span class="heart">❤</span> por Jack</a>
       </p>
     </footer>
+      <div class="hr"></div>
+
   </body>
 </html>
