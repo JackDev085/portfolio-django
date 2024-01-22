@@ -24,7 +24,31 @@ a:hover{
   align-items: center;
   justify-content: center;
   color: white;
+  position: relative;
 }
+
+.stars{
+  width: 1.5px;
+  height: 1.5px;
+  background-color: white;
+  animation: movimento 100s infinite linear;
+  border-radius: 10px;
+  position: absolute;
+}
+
+
+@keyframes movimento{
+ 0%{
+    transform: translateY(-5vh) scale(1);
+  }
+  50%{
+    transform: translateY(10vh) scale(1.5);
+  }
+  100%{
+    transform: translateY(-5) scale(1);
+  }
+}
+
 .top{
   width: 300px;
   height: 8vh;

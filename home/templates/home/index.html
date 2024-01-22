@@ -13,8 +13,9 @@
   <title>Página inicial</title>
 </head>
 <body>
+  
   <main class="main">
-
+  <div class="stars"></div>
     <div class="top">
       <h2>
         <a href="{% url "builds:builds" %}">projetos</a>
@@ -30,5 +31,6 @@
       <h2>Desenvolvedor Web</h2>
     </div>
   </main>
+  <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>

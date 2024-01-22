@@ -1,20 +1,23 @@
+:root{
+  --bg : #000000;
+  --lk : #ccc9dc;
+}
+
 *{
   margin: 0;
   pad: 0;
   box-sizing: border-box;
-
-  color: white;
 }
 body{
-  background: linear-gradient(#020203, #17171A, #0C0C0E);
+  background: var(--bg); 
 }
 a{
   text-decoration: none;
-  color: #9b9ba3;
-  transition: all 200ms;
+  color: var(--lk);
+  opacity: 80%;
 }
 a:hover{
-  color: white;
+  opacity: 100%;
 }
 .main{
   width: 100vw;
@@ -24,7 +27,32 @@ a:hover{
   align-items: center;
   justify-content: center;
   color: white;
+  position: relative;
 }
+
+.stars{
+  width: 1.5px;
+  height: 1.5px;
+  background-color: white;
+  animation: movimento 100s infinite linear;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+}
+
+
+@keyframes movimento{
+ 0%{
+    transform: translateY(-5vh) scale(1);
+  }
+  50%{
+    transform: translateY(10vh) scale(1.5);
+  }
+  100%{
+    transform: translateY(-5) scale(1);
+  }
+}
+
 .top{
   width: 300px;
   height: 8vh;
@@ -46,6 +74,7 @@ a:hover{
 }
 .name h1{
   font-size:90px;
+  text-shadow: 1px 2px 1px var(--bg); 
 }
 @media (max-width:800px){
   .name{
