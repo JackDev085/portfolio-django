@@ -28,6 +28,8 @@ a:hover{
   justify-content: center;
   color: white;
   position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .stars{
